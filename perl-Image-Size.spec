@@ -16,6 +16,7 @@ Source:		http://www.cpan.org/modules/by-module/Expect/%{module}-%{version}.tar.b
 BuildRequires:	perl-Compress-Zlib
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
+BuildRequires:	perl(Module::Build::Compat)
 %endif
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
