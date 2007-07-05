@@ -12,12 +12,9 @@ Summary:	Read the dimensions of an image in several popular formats
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Expect/%{module}-%{version}.tar.bz2
-BuildRequires:	perl-Compress-Zlib
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-BuildRequires:	perl(Module::Build::Compat)
-%endif
+Source:		http://www.cpan.org/modules/by-module/Image/%{module}-%{version}.tar.bz2
+BuildRequires:	perl(Compress::Zlib)
+BuildRequires:	perl(Module::Build)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -30,18 +27,18 @@ IMG directives.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-%make CFLAGS='%{optflags} -DENGLISH'
+%{__perl} Build.PL installdirs=vendor
+./Build CFLAGS="%{optflags}"
 
 %check
-make test
+./Build test
 
 %clean 
 rm -rf %{buildroot}
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std
+./Build install destdir=%{buildroot}
 
 %files
 %defattr(-,root,root)
