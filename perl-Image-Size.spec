@@ -16,7 +16,6 @@ Source:		http://www.cpan.org/modules/by-module/Image/%{module}-%{version}.tar.bz
 BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl(Module::Build)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Image::Size is a library based on the image-sizing code in the wwwimagesize
