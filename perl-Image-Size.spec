@@ -1,6 +1,6 @@
 %define module	Image-Size
 %define name	perl-%{module}
-%define version 3.01
+%define version 3.1.1
 %define release %mkrel 1
 %define epoch	1
 
