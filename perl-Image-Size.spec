@@ -1,5 +1,5 @@
 %define upstream_name	 Image-Size
-%define upstream_version 3.221
+%define upstream_version 3.230
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
