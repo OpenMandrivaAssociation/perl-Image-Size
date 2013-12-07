@@ -5,7 +5,7 @@ Summary:	Read the dimensions of an image in several popular formats
 Name:		perl-%{modname}
 Epoch:		1
 Version:	%perl_convert_version %{modver}
-Release:	9
+Release:	10
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
