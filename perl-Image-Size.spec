@@ -38,5 +38,6 @@ make test
 # %{perl_vendorlib}/auto/Image
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+%{_libdir}/perl5/vendor_perl/5.16.3/Image/Size.pm
 
 
