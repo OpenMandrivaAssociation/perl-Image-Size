@@ -1,15 +1,15 @@
 %define modname	Image-Size
-%define modver	3.230
+%define modver 3.232
 
 Summary:	Read the dimensions of an image in several popular formats
 Name:		perl-%{modname}
 Epoch:		1
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Image/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Image/Image-Size-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-devel
@@ -38,4 +38,5 @@ make test
 %{perl_vendorlib}/auto/Image
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
