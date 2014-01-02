@@ -34,8 +34,8 @@ make test
 
 %files
 %{_bindir}/imgsize
-%{perl_vendorlib}/Image
-%{perl_vendorlib}/auto/Image
+# %{perl_vendorlib}/Image
+# %{perl_vendorlib}/auto/Image
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 
