@@ -1,15 +1,13 @@
 %define modname	Image-Size
-%define modver 3.232
 
 Summary:	Read the dimensions of an image in several popular formats
 Name:		perl-%{modname}
-Epoch:		1
-Version:	%perl_convert_version %{modver}
+Version:	3.300
 Release:	1
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Image/Image-Size-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Image/Image-Size-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Compress::Zlib)
@@ -21,17 +19,17 @@ script, a tool that analyzes HTML files and adds HEIGHT and WIDTH tags to
 IMG directives.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/imgsize

@@ -1,5 +1,2 @@
-removed_sources:
-  Image-Size-3.230.tar.gz: 8f1ff3662d8020c0e4daee4a7cb2312d06b86686
 sources:
-  Image-Size-3.232.tar.gz: d37c27247099414b1d1fc8a85a3da768ba59569e
-  files-before-rpm: dff82b20e5f61a2a8aa8767acce4cc346ec59621
+  Image-Size-3.300.tar.gz: 9f041858d9b8aa85e2fe87f15efac70c3da1a8af
