@@ -6,7 +6,7 @@ Version:	3.300
 Release:	2
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Image/Image-Size-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
